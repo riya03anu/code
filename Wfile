@@ -1,0 +1,65 @@
+1]arya.js
+  -console.log("Name:   ");
+  -console.log("class:   ");
+  -console.log("Name:   ");
+  -console.log("sub:   ");
+
+2]Dockerfile:
+  FROM node.alpine
+  COPY . /partb
+  CMD node /partb/arya.js
+3] Terminal(vs)
+  check path
+  docker --version
+  node arya.js
+  docker build =t partb .
+  docker images
+=======================================================================================================
+1]install node.js
+2]terminal (vs)
+  npm --version
+  npm install -g @angular cli@latest
+  ng new part_c
+     ExecutionPolicy RemoteSigned -Scope CurrentUser
+     Get-ExecutionPolicy
+     Get-ExecutionPolicy -list
+  yes
+  style- css
+3]app.component.html
+    remov all code
+    <h1> {{title}}</h1>
+    <input type="text" #name placeholder="Enter Your Name" name="Name"> <br>
+    <button (click)="getvalue(name.value, address.value, contact.value, email.value)"> Register </button>
+    <h1> Your Registered Data</h1> <br>
+    <p> Name: ({displayname}}</p>
+
+4]app.component.js
+    export class AppComponent {
+      title 'Registration Form';
+       displayname='';
+
+        getValue(name: string, address:string, contact:string, email:string){
+        this.displayname-name;
+           } }
+
+5] css
+    input{
+    width: 400px;
+    height: 25px;
+    margin:10px;
+    padding: 5px;}
+==========================================================================================================================
+    npm init
+    install express --save
+1]public folder-html file - title 
+2]index.js 
+  const express = requair('express');
+  const app=express();
+  app.use(express.static('public'))
+  app.listen(4000, ()=>{
+   console.log("server is started");
+    })
+3]node index.js
+4]browser = localhost:4000
+====================================================================================================================================
+
